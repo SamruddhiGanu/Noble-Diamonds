@@ -1,0 +1,16 @@
+.footer { background: #0d0b07; border-top: 1px solid #2e2a1f; padding: 80px 40px 30px; }
+.footer-top { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 60px; margin-bottom: 60px; }
+.footer-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+.footer-logo .logo-icon { font-size: 28px; color: #c9a84c; }
+.footer-logo .logo-name { font-family: 'Cormorant Garamond', serif; font-size: 18px; color: #c9a84c; letter-spacing: 4px; }
+.footer-logo .logo-sub { font-size: 8px; letter-spacing: 5px; color: #9a8f7a; }
+.footer-tagline { color: #9a8f7a; font-size: 13px; line-height: 1.8; }
+.footer-col h4 { font-family: 'Cormorant Garamond', serif; font-size: 16px; color: #c9a84c; letter-spacing: 2px; margin-bottom: 20px; font-weight: 400; }
+.footer-col a, .footer-col p { display: block; color: #9a8f7a; font-size: 12px; letter-spacing: 1px; text-decoration: none; margin-bottom: 10px; transition: color 0.3s; }
+.footer-col a:hover { color: #c9a84c; }
+.footer-bottom { max-width: 1280px; margin: 0 auto; border-top: 1px solid #2e2a1f; padding-top: 30px; display: flex; justify-content: space-between; }
+.footer-bottom p { color: #5a5347; font-size: 11px; letter-spacing: 1px; }
+@media (max-width: 768px) {
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .footer-bottom { flex-direction: column; gap: 8px; }
+}

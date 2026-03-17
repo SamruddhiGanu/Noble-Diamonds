@@ -1,0 +1,38 @@
+.navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  padding: 20px 40px;
+  transition: all 0.4s ease;
+  background: transparent;
+}
+.navbar.scrolled {
+  background: rgba(13, 11, 7, 0.97);
+  padding: 14px 40px;
+  border-bottom: 1px solid #2e2a1f;
+  backdrop-filter: blur(10px);
+}
+.nav-inner {
+  max-width: 1280px; margin: 0 auto;
+  display: flex; align-items: center; gap: 40px;
+}
+.nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.logo-icon { font-size: 28px; color: #c9a84c; line-height: 1; }
+.logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+.logo-name { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: #c9a84c; letter-spacing: 4px; }
+.logo-sub { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 6px; color: #9a8f7a; }
+.nav-links { display: flex; align-items: center; gap: 32px; margin-left: auto; }
+.nav-link { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #f5efe0; transition: color 0.3s; text-decoration: none; background: none; font-family: 'Montserrat', sans-serif; }
+.nav-link:hover { color: #c9a84c; }
+.admin-link { color: #c9a84c; }
+.logout-btn { cursor: pointer; padding: 0; }
+.nav-cta { font-size: 10px; letter-spacing: 2px; padding: 10px 24px; white-space: nowrap; }
+.hamburger { display: none; flex-direction: column; gap: 5px; background: none; cursor: pointer; padding: 4px; }
+.hamburger span { display: block; width: 24px; height: 1px; background: #c9a84c; transition: all 0.3s; }
+
+@media (max-width: 900px) {
+  .navbar { padding: 16px 20px; }
+  .nav-links { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(13,11,7,0.98); flex-direction: column; justify-content: center; gap: 28px; z-index: 999; }
+  .nav-links.open { display: flex; }
+  .nav-link { font-size: 14px; }
+  .nav-cta { display: none; }
+  .hamburger { display: flex; z-index: 1001; }
+}
